@@ -1,0 +1,41 @@
+{% set name = "bluesky-darkframes" %}
+{% set version = "0.3.0" %}
+{% set file_ext = "tar.gz" %}
+{% set hash_value = "da40210e36189a06dc52945b729bbd4e338b92609b20dece35b47b2777ba4dc9" %}
+
+package:
+  name: {{ name|lower }}
+  version: {{ version }}
+
+source:
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ file_ext }}
+  sha256: {{ hash_value }}
+
+build:
+  number: 0
+  noarch: python
+  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+
+requirements:
+  build:
+    - python
+    - pip
+  run:
+    - python
+    - bluesky
+    - event-model >=1.11.0
+    - frozendict
+    - numpy
+
+test:
+  imports:
+    - bluesky_darkframes
+
+about:
+  home: https://github.com/bluesky/bluesky-darkframes
+  license: BSD (3-clause)
+  license_family: BSD
+  license_file: LICENSE
+  summary: Tools for acquiring and subtracting darkframes
+  doc_url: https://blueskyproject.io/bluesky-darkframes
+  dev_url: https://github.com/bluesky/bluesky-darkframes
