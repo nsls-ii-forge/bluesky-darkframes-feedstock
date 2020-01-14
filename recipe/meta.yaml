@@ -27,6 +27,7 @@ requirements:
     - frozendict
     - numpy
     - ophyd <1.4.0b
+    - pyepics <3.4.0
 
 test:
   imports:
