@@ -26,6 +26,7 @@ requirements:
     - event-model >=1.11.0
     - frozendict
     - numpy
+    - ophyd <1.4.0b
 
 test:
   imports:
