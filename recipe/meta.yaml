@@ -1,7 +1,7 @@
 {% set name = "bluesky-darkframes" %}
-{% set version = "0.3.0" %}
+{% set version = "0.4.0" %}
 {% set file_ext = "tar.gz" %}
-{% set hash_value = "da40210e36189a06dc52945b729bbd4e338b92609b20dece35b47b2777ba4dc9" %}
+{% set hash_value = "0e8d2e4eefe74ea439630f53b36a4e6850c5dfa43a16e87f28745b5b57ece4b1" %}
 
 package:
   name: {{ name|lower }}
@@ -23,7 +23,7 @@ requirements:
   run:
     - python
     - bluesky
-    - event-model >=1.11.0
+    - event-model >=1.14.0
     - frozendict
     - numpy
 
