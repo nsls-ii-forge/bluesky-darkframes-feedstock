@@ -5,11 +5,13 @@ Home: https://github.com/bluesky/bluesky-darkframes
 
 Package license: BSD (3-clause)
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/nsls-ii-forge/bluesky-darkframes-feedstock/blob/master/LICENSE.txt)
 
 Summary: Tools for acquiring and subtracting darkframes
 
+Development: https://github.com/bluesky/bluesky-darkframes
 
+Documentation: https://blueskyproject.io/bluesky-darkframes
 
 Current build status
 ====================
