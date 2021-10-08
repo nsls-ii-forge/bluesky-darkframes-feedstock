@@ -1,20 +1,18 @@
 {% set name = "bluesky-darkframes" %}
-{% set version = "0.4.0" %}
-{% set file_ext = "tar.gz" %}
-{% set hash_value = "0e8d2e4eefe74ea439630f53b36a4e6850c5dfa43a16e87f28745b5b57ece4b1" %}
+{% set version = "0.5.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ file_ext }}
-  sha256: {{ hash_value }}
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 3207e164d15d23b0fe4712dc2d275d1f5a5802c12f46c7126ab7a2884d5f321b
 
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   build:
